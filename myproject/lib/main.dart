@@ -9,7 +9,6 @@ import 'package:myproject/Login/login.dart';
 import 'package:myproject/Login/wrapper.dart';
 
 import 'package:timezone/data/latest_10y.dart';
-import 'BloodDonor/DonationForm.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,7 +33,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
        // Set the initial route
       routes: {
-        '/bloodDonationForm': (context) => DonationForm(),
         '/home': (context)=> Homepage(),
         '/login': (context)=> Login(),
 

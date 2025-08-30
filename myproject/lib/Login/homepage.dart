@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:myproject/Login/AboutPage.dart';
 import 'package:myproject/BMI/BMIPage.dart';
-import 'package:myproject/BloodDonor/BloodDonorsPage.dart';
 import 'package:myproject/Chatbot/ChatbotPage.dart';
 import 'package:myproject/EmergencyAssistance/EmergencyAssistanceScreen.dart';
 import 'package:myproject/HealthRecord/HealthRecordListPage.dart';
@@ -28,19 +27,16 @@ class _HomepageState extends State<Homepage> {
   }
 
   var iconList = [
-    AppAssets.icBloodDonation,
     AppAssets.icChatbot,
     AppAssets.icClock
   ];
 
   var backgroundColorList = [
-    Colors.red,
     Colors.green,
     Colors.orange,
   ];
 
   var titleList = [
-    'Find a Donor',
     'Talk to Our MediBot',
     'Medication Reminders',
   ];
@@ -118,19 +114,14 @@ class _HomepageState extends State<Homepage> {
                         backgroundColor: backgroundColorList[index],
                         onPressed: () {
                           switch (index) {
+
                             case 0:
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => BloodDonorsPage()),
-                              );
-                              break;
-                            case 1:
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(builder: (context) => ChatbotPage()),
                               );
                               break;
-                            case 2:
+                            case 1:
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(builder: (context) => ReminderPage()),

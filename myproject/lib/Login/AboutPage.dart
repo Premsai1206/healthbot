@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:myproject/BloodDonor/BloodDonorsPage.dart';
 import 'package:myproject/Notifications/ReminderPage.dart';
 
 import '../BMI/BMIPage.dart';
@@ -64,17 +63,6 @@ class _AboutPageState extends State<AboutPage> {
             ),
             SizedBox(height: 10),
 
-            ListTile(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => BloodDonorsPage()),
-                );
-              },
-
-              title: Text('Find your blood donors',style: TextStyle(color: Colors.white)),
-            ),
-            SizedBox(height: 10),
             ListTile(
               onTap: () {
                 Navigator.push(
